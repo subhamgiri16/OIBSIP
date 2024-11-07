@@ -1,0 +1,287 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.subham-giri-1-icon {
+    width: 90px; /* Adjust the size as needed */
+    height: auto;
+    max-width: 100%;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+}
+
+.profile p {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ff7b00;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff5c00;
+}
+
+/* Carousel container */
+.companies-carousel {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.companies-carousel h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    animation: scroll 7s linear infinite;
+}
+
+.logo-item {
+    margin: 0 30px;
+}
+
+.logo-item img {
+    max-width: 80px;
+    height: auto;
+}
+
+
+
+/* Introduction */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.intro h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.video-container {
+    max-width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+video {
+    width: 100%; /* Adjust based on your design */
+    height: auto;
+}
+
+
+/* Projects */
+.projects {
+    padding: 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background-color: #222;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.project-card a {
+    color: #ff7b00;
+    text-decoration: none;
+}
+
+/* Client Speak Section */
+.client-speak {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+.client-speak h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff7b00;
+}
+
+.testimonial-carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial {
+    display: none;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial h4 {
+    font-size: 16px;
+    color: #ff7b00;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.carousel-controls button {
+    background-color: #ff7b00;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-controls button:hover {
+    background-color: #ff5c00;
+}
+
+
+
+/* Services */
+.services {
+    text-align: center;
+    padding: 20px;
+}
+
+.service-card {
+    background-color: #222;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ff7b00;
+    text-decoration: none;
+}
+
+/* Animation for scrolling logos */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .logo-item img {
+        max-width: 100px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .project-card img {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) {
+    .video-container {
+        width: 50%; /* Half width for larger screens */
+        margin: 20px auto; /* Center the video */
+    }
+
+    video {
+        width: 100%; /* Make video fill the container */
+    }
+}
